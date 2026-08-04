@@ -230,7 +230,7 @@
   .qa-q .caret{color:var(--brand-500); transition:transform .2s ease;}
   .qa-card.open .qa-q .caret{transform:rotate(180deg);}
   .qa-a{max-height:0; overflow:hidden; transition:max-height .3s ease;}
-  .qa-card.open .qa-a{max-height:400px;}
+  .qa-card.open .qa-a{max-height:3000px;}
   .qa-a-inner{padding:0 16px 16px 46px; font-size:13.5px; color:var(--ink-600); line-height:1.65;}
 
   .danger-box{
@@ -495,12 +495,14 @@
     <section class="view" id="view-learn">
       <div class="pills">
         <button class="pill active" data-sub="qa" onclick="switchSub('learn','qa')">รู้จักการดมยาสลบ</button>
+        <button class="pill" data-sub="prep" onclick="switchSub('learn','prep')">เตรียมตัวเฉพาะหัตถการ</button>
         <button class="pill" data-sub="post" onclick="switchSub('learn','post')">หลังผ่าตัด</button>
         <button class="pill" data-sub="home2" onclick="switchSub('learn','home2')">เมื่อกลับบ้าน</button>
         <button class="pill" data-sub="faq" onclick="switchSub('learn','faq')">FAQ</button>
       </div>
 
       <div class="subview active" id="learn-qa"></div>
+      <div class="subview" id="learn-prep"></div>
       <div class="subview" id="learn-post"></div>
       <div class="subview" id="learn-home2"></div>
       <div class="subview" id="learn-faq">
